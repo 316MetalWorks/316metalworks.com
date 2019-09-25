@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+   <html lang='en' dir='ltr'>
+    <head>
+      <meta charset='utf-8'>
+      <title>3:16 MetalWorks | Contact</title>
+      <script>
+      function displaynav(){
+        var element = document.getElementById('target');
+        console.log(element.style.display);
+        if(element.style.display=='block')element.style.display='none';
+        else element.style.display='block';
+      };
+      </script>
+      <link rel='stylesheet' href='darkredhl.css'>
+      <link rel='favicon' href='favicon.png'>
+    </head>
+    <body>
+      <a href='/'><img
+      src='res/316.png'
+      alt='3:16 MetalWorks'></a>
+      <span class='dropdown'>
+        <button class='dropbtn' onclick="displaynav()"> Home </button>
+        <div id='target' class='dropdown-content'>
+          <a href='/'>Home</a>
+          <a href='about.html'>About Us</a>
+          <a href='projects.html'>Projects</a>
+        </div>
+      </span>
+      <hr>
+      <p class = textwall style='text-align:center;justify:left;'>
+        3:16 MetalWorks<br>
+        Stan F Lee: (owner)<br>
+        Phone: <a href='tel:+16784497117'>(678)449-7117</a><br>
+        Email: <a href='mailto:316metalworks@gmail.com'>316metalworks@gmail.com</a><br>
+      </p>
+      <hr>
+    </body>
+  </html>
