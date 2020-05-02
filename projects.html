@@ -10,11 +10,23 @@
         if(element.style.display=='block')element.style.display='none';
         else element.style.display='block';
       };
+      function loadImages(){
+        var photoWall = document.getElementById('photos');
+        var path = "res/ProjectRes/";
+        var numOfPhotos = 15 ; //Change To Include More Photos
+        for(var i = 1; i<=numOfPhotos; i++){
+          var photo = document.createElement("IMG");
+          photo.src=path+i+".jpg";
+          console.log(path+i+".jpg");
+          photoWall.appendChild(photo);
+
+        }
+      };
       </script>
       <link rel='stylesheet' href='darkredhl.css'>
       <link rel='favicon' href='favicon.png'>
     </head>
-    <body>
+    <body onload="loadImages()">
       <a href='/'><img
       src='res/316.png'
       alt='3:16 MetalWorks'></a>
@@ -27,22 +39,30 @@
         </div>
       </span>
       <hr>
-      <div class='textwall'>
+      <div id='photos' class='textwall'>
+<!--
+      <img src='res/03_1.jpg'><br>
+      <img src='res/03_2.jpg'><br>
+      <img src='res/03_3.jpg'><br>
+      <img src='res/03_4.jpg'><br>
+      <img src='res/03_5.jpg'><br>
+
       <h2>Stainless Steel - High Pressure Water & Chemical Pipe Welds<h2><br>
-      <!--(res/03_x)-->
+      <!--(res/03_x)->
       <img src='res/03_1.jpg'><br>
       <img src='res/03_2.jpg'><br>
       <img src='res/03_3.jpg'><br>
       <img src='res/03_4.jpg'><br>
       <img src='res/03_5.jpg'><br>
       <h2>Sanitary & Food Grade Welds & Reverse Osmosis Systems<h2><br>
-      <!--(res/04_x)-->
+      <!--(res/04_x)->
       <img src='res/04_1.jpg'><br>
       <img src='res/04_2.jpg'><br>
       <img src='res/04_3.jpg'><br>
       <h2>Structured Frame Welding<h2><br>
-      <!--(res/05_x)-->
+      <!--(res/05_x)->
       <img src='res/05_1.jpg'><br>
+-->
     </div>
 
     <hr>
