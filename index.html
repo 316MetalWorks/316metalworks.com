@@ -1,56 +1,64 @@
 <!DOCTYPE html>
-   <html lang='en' dir='ltr'>
-    <head>
-      <meta charset='utf-8'>
-      <title>3:16 MetalWorks</title>
-      <script>
-      function displaynav(){
-        var element = document.getElementById('target');
-        console.log(element.style.display);
-        if(element.style.display=='block')element.style.display='none';
-        else element.style.display='block';
-      };
-      </script>
-      <link rel='stylesheet' href='darkredhl.css'>
-      <link rel='favicon' href='favicon.png'>
-    </head>
-    <body>
-      <a href='/'><img
-      src='res/316.png'
-      alt='3:16 MetalWorks'></a>
-      <span class='dropdown'>
-        <button class='dropbtn' onclick="displaynav()"> Home </button>
-        <div id='target' class='dropdown-content'>
-          <a href='about.html'>About Us</a>
-          <a href='projects.html'>Projects</a>
-          <a href='contact.html'>Contact Us</a>
-        </div>
-      </span>
-      <hr>
-      <h1>Services & Certification</h1><p class='textwall'>
-  // 6G Certification in Stainless and Carbon Tig.<br>
-  // TIG- MIG- Stick Welding<br>
-  // Stainless-Carbon Steel- Titanium and Aluminum Welding.<br>
-  // Metal Fabrication Services.<br>
-</p>
-      <p class='textwall'>
-        3:16 Metal Works is a highly motivated company ready to
-        help you with your welding and metal fabrication needs.<br>
-        <img src='res/01.jpg'><br>
-        With over 20+ years in the industry we offer services
-        in the welding and metal fabrication field, be it shop
-        work or mobile services; 3:16 Metal Works is a company
-        that desires to give the best job possible to our customers.<br>
-        <img src='res/02.jpg'><br>
-        We are a Christian based company that named the business after the famous <em>John 3:16</em>. We look forward to working with you.<br>
-      </p>
-      <hr>
-      <ul class='footer'>
-        <li>Contact Us:&nbsp&nbsp&nbsp
-        <li>3:16 MetalWorks<spacer>&nbsp|&nbsp
-        <li>Stan F Lee &nbsp|&nbsp
-        <li>Phone: <a href='tel:+16784497117'>(678)449-7117</a>&nbsp|&nbsp
-        <li>Email: <a href='mailto:316metalworks@gmail.com'>316metalworks@gmail.com</a>
-      </ul>
-    </body>
-  </html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--STYLES-->
+  <title>3:16 Metal Works</title>
+  <link rel="stylesheet" type="text/css" href="./res/darkredhl.css"><link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="icon" href="/res/favicon.ico">
+
+  <!--External Fonts-->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro&display=swap" rel="stylesheet"> 
+  <script src="https://kit.fontawesome.com/f979a6de37.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <section class="main">
+  <div class="left-bar">
+  <a href="/index.html"><img src="/res/logo.png" alt="3:16 Metal Works" class="company-name" /></a>
+  <h2 class="tag-line">6G Certified TIG, MIG, and Stick Welding</h2>
+  
+  <span class="social-links">
+    <a href="https://www.facebook.com/pg/316metalworks/posts/"><i class="fab fa-facebook-square"></i></a>
+    <a href="https://www.instagram.com/316_metal_works/"><i class="fab fa-instagram-square"></i></a>
+    <a href="https://316-metal-works-welding-and-metal-fabrication.business.site/"><i class="fab fa-google-plus-square"></i></a>
+  </span>
+  <nav role="navigation" class="nav-bar">
+    <ul>
+      <li>
+        <a href="/projects.html">Projects</a>
+      </li>
+      <li>
+        <a href="/contact.html">Contact</a>
+      </li>
+      <li>
+        <a href="/about.html">About</a>
+      </li>
+    </ul>
+    
+  </nav>
+  </div>
+  <div class="right-bar">
+    <article>
+      <div class="photo-view">
+        <img class = "photo" src="/res/img/21.png">
+        <h1 class = "caption">3:16 Metal Works</h1>
+        <span class="browse" onclick="clearInterval(interval)">
+          <!--populated by /res/browse.js-->
+        </span>
+      </div>
+    </article>
+  </div>
+  </section>
+  <script src="/res/browse.js" async></script>
+  <footer>
+    <h3>3:16 Metal Works, LLC</h3>
+    <h3>Independently Owned and Operated (est. 2019)</h3>
+    <a href="tel:+16784497117">Call</a>  or
+    <a href="mailto:316metalworks@gmail.com">Email</a> 
+  </footer>
+</body>
+</html>
