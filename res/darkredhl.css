@@ -200,6 +200,9 @@ footer h3{
     width: 20vw;
     height: 20vw;
   }
+  img{
+    max-width: 100vw;
+  }
   
 }
 
